@@ -12,10 +12,7 @@ class SinglyLinkedList {
     this.tail = null;
   }
 
-    insertAtBeginning(value) {
-      
-         
-  }
+  insertAtBeginning(value) {}
 
   insertAtEnd(value) {
     this.length++;
