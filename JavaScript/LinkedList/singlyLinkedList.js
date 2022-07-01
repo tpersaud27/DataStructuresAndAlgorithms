@@ -25,6 +25,11 @@ class SinglyLinkedList {
     return this.head;
   }
 
+  setHead(newHead) {
+    this.head = newHead;
+    return this;
+  }
+
   printList() {
     if (this.isEmpty()) {
       console.log("Empty List");
