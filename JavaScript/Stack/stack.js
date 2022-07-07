@@ -18,7 +18,7 @@ class Stack {
   }
 
   // This returns the top element of the stack
-  peek() {
+  getTop() {
     // Check if the stack is empty, return null if true
     if (this.items.length == 0) {
       return null;
@@ -74,8 +74,19 @@ class Stack {
 }
 
 // ----------------------------------------------------------------
-let myStack = new Stack();
+var myStack = new Stack();
 
-console.log("You have successfully created a Stack of size: " + myStack.size());
+for (var i = 0; i < 5; i++) {
+  myStack.push(i);
+}
+
 console.log("Is stack empty? " + myStack.isEmpty());
-console.log("top: " + myStack.peek());
+console.log("top: " + myStack.getTop());
+
+for (var i = 0; i < 5; i++) {
+  console.log("Element popped: " + myStack.pop());
+  console.log("top: " + myStack.getTop());
+}
+
+console.log("Is stack empty?: " + myStack.isEmpty());
+console.log("top: " + myStack.getTop());
